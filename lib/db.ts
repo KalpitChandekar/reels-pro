@@ -22,7 +22,7 @@ export async function connectToDatabase() {
   if (!cached.promise) {
     const opts = {
       bufferCommands: true,
-      masPoolSize: 10,
+      maxPoolSize: 10,
     };
 
     cached.promise = mongoose
